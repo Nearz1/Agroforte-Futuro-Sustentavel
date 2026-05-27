@@ -108,7 +108,7 @@ Desenvolvido com foco em experiência do usuário, acessibilidade e performance,
 ## 📂 Estrutura do Projeto
 
 ```
-agroforte/
+Agroforte-Futuro-Sustentavel/
 ├── img/
 │   ├── hero.jpg
 │   ├── impacto.jpg
