@@ -183,7 +183,7 @@ Este projeto está licenciado sob a Licença MIT.
 
 <div align="center">
 
-**Feito com 💚 e ☀️ por Scolver**
+**Feito por Scolver**
 
 [⬆ Voltar ao topo](#-agroforte)
 
