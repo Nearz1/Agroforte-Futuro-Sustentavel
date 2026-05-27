@@ -3,7 +3,7 @@
   const $ = (s, ctx=document) => ctx.querySelector(s);
   const $$ = (s, ctx=document) => Array.from(ctx.querySelectorAll(s));
 
-  // ============ ACCESSIBILITY HUB ============
+  //  =========== ACCESSIBILITY HUB ===========
   const a11yToggle = $('#a11yToggle');
   const a11yPanel = $('#a11yPanel');
   const fontSizeSlider = $('#fontSizeSlider');
