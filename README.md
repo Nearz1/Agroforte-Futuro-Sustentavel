@@ -118,9 +118,11 @@ Agroforte-Futuro-Sustentavel/
 │   ├── praticas4.jpg
 │   ├── praticas5.jpg
 │   └── sobre.jpg
+├── js/
+│   └── script.js
+├── css/
+│   └── styles.css
 ├── index.html
-├── script.js
-├── styles.css
 └── README.md
 ```
 
@@ -130,7 +132,7 @@ Agroforte-Futuro-Sustentavel/
 
 ### Cores
 
-As cores são definidas como CSS Variables no arquivo `styles.css`:
+As cores são definidas como CSS Variables no arquivo `css/styles.css`:
 
 ```css
 :root {
