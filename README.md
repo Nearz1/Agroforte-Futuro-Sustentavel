@@ -2,12 +2,6 @@
 
 <div align="center">
 
-![Agroforte](https://img.shields.io/badge/Agroforte-Futuro%20Sustentável-success?style=for-the-badge)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-
 **O equilíbrio entre produção agrícola e preservação ambiental**
 
 </div>
@@ -33,7 +27,7 @@ Desenvolvido com foco em experiência do usuário, acessibilidade e performance,
 
 ### 🎨 Design e Interface
 - **Paleta de Cores Inspirada na Natureza** - Tons de verde, dourado e creme que remetem à terra e floresta
-- **Tipografia Premium** - Combinação de DM Serif Display (títulos) e Fira Sans (corpo) do Google Fonts
+- **Tipografia Premium** - Combinação de Georgia (títulos serif) e system-ui (corpo sans-serif)
 - **Layout Imersivo** - Seções com altura total (full-height) para experiência cinematográfica
 - **Grain Effect** - Textura sutil de grão sobre as imagens para estética vintage
 - **Marquee Infinito** - Texto em movimento contínuo na hero section com keywords do projeto
@@ -80,6 +74,7 @@ Desenvolvido com foco em experiência do usuário, acessibilidade e performance,
   - Modo escuro
 - **Vanilla JavaScript** - Sem dependências externas, performance máxima
 - **Intersection Observer API** - Detecção eficiente de elementos na viewport
+- **Web Speech API** - API nativa para leitura de texto
 - **RequestAnimationFrame** - Animações otimizadas com 60fps
 - **Passive Event Listeners** - Scroll otimizado para melhor performance
 - **CSS Variables** - Customização eficiente e manutenção simplificada
@@ -150,17 +145,17 @@ As cores são definidas como CSS Variables no arquivo `css/styles.css`:
 
 ### Fontes
 
-O projeto utiliza duas fontes do Google Fonts:
+O projeto utiliza fontes nativas do sistema:
 
-- **DM Serif Display** - Títulos e textos grandes
-- **Fira Sans** - Texto de corpo e interface
+- **Georgia** - Títulos serif
+- **System-ui** - Texto de corpo e interface
 
 Para alterar, modifique as variáveis:
 
 ```css
 :root {
-  --serif: "DM Serif Display", Georgia, serif;
-  --sans: "Fira Sans", system-ui, sans-serif;
+  --serif: Georgia, "Times New Roman", Times, serif;
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 ```
 

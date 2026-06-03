@@ -3,15 +3,12 @@
   const $ = (s, ctx=document) => ctx.querySelector(s);
   const $$ = (s, ctx=document) => Array.from(ctx.querySelectorAll(s));
 
-  //  =========== ACCESSIBILITY HUB ===========
+  //  =========== HUB DE ACESSIBILIDADE ===========
   const a11yToggle = $('#a11yToggle');
   const a11yPanel = $('#a11yPanel');
   const fontSizeSlider = $('#fontSizeSlider');
   const fontSizeValue = $('#fontSizeValue');
   const darkModeToggle = $('#darkModeToggle');
-  const ttsStart = $('#ttsStart');
-  const ttsPause = $('#ttsPause');
-  const ttsStop = $('#ttsStop');
 
   if(a11yToggle){
     a11yToggle.addEventListener('click', () => {
@@ -27,7 +24,6 @@
       if(fontSizeSlider) fontSizeSlider.value = savedSize;
       if(fontSizeValue) fontSizeValue.textContent = savedSize + 'px';
     } else {
-      // Default to 16px if no saved value
       document.documentElement.style.setProperty('--base-font-size', '16px');
       if(fontSizeSlider) fontSizeSlider.value = 16;
       if(fontSizeValue) fontSizeValue.textContent = '16px';
@@ -43,7 +39,7 @@
     });
   }
 
-  // Alternar o modo escuro com o localStorage
+  // Alternar o modo escuro com localStorage
   function initDarkMode(){
     const savedDarkMode = localStorage.getItem('agroforte-dark-mode');
     if(savedDarkMode === 'true'){
@@ -71,12 +67,15 @@
     });
   }
 
-  // Text-to-Speech with Web Speech API
+  // Text-to-Speech Com Web Speech API
   let speechSynth = window.speechSynthesis;
   let speechUtterance = null;
   let isPaused = false;
   let currentTextIndex = 0;
   let textElements = [];
+  const ttsStart = $('#ttsStart');
+  const ttsPause = $('#ttsPause');
+  const ttsStop = $('#ttsStop');
 
   function getTextElements(){
     return Array.from(document.querySelectorAll('h1, h2, h3, h4, p, article, .big-text'))
@@ -250,7 +249,7 @@
   }, { threshold: 0.5 });
   $$('.num[data-count]').forEach(el => counterIO.observe(el));
 
-  // Rolagem fixa horizontal (com lerp para fluidez)
+  // Rolagem fixa horizontal
   const hSection = $('.horizontal');
   const hTrack = $('#hTrack');
   let hMax = 0;
@@ -276,7 +275,7 @@
   }
   hLoop();
 
-  // Custom cursor
+  // Cursor Customizado
   const cursor = $('#cursor');
   let cx = window.innerWidth/2, cy = window.innerHeight/2;
   let tx = cx, ty = cy;

@@ -9,9 +9,9 @@
   --cream:#f5f0e0;
   --ink:#0a1a14;
   --line: rgba(245,240,224,.14);
-  --serif:"DM Serif Display", Georgia, serif;
-  --sans:"Fira Sans", system-ui, sans-serif;
-  
+  --serif:Georgia, "Times New Roman", Times, serif;
+  --sans:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
   /* Accessibility Variables */
   --base-font-size: 16px;
   --dark-mode: 0;
@@ -50,8 +50,9 @@ em,.italic{font-style:italic;color:var(--gold-soft)}
 /* ============ HERO ============ */
 .hero{position:relative;height:100vh;min-height:680px;width:100%;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 40px 80px}
 .hero-bg{position:absolute;inset:-5%;background-size:cover;background-position:center;will-change:transform;transform:scale(1.05)}
+.hero-bg--hero{background-image:url('../img/hero.jpg')}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(6,30,22,.55) 0%, rgba(6,30,22,.2) 35%, rgba(10,26,20,.95) 100%)}
-.hero-grain{position:absolute;inset:0;opacity:.12;mix-blend-mode:overlay;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+.hero-grain{position:absolute;inset:0;opacity:.12;mix-blend-mode:overlay;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(245,240,224,.03) 2px,rgba(245,240,224,.03) 4px)}
 .hero-content{position:relative;max-width:1100px}
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:0.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:28px;opacity:0;animation:fadeUp .9s .2s forwards}
 .eyebrow span{width:32px;height:1px;background:var(--gold-soft)}
@@ -97,6 +98,7 @@ em,.italic{font-style:italic;color:var(--gold-soft)}
 .sticky-block{display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sticky-media{position:relative;height:100vh;position:sticky;top:0;overflow:hidden}
 .sticky-img{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.08);transition:transform 1.4s ease}
+.sticky-img--sobre{background-image:url('../img/sobre.jpg')}
 .sticky-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,var(--bg-2));pointer-events:none}
 .sticky-text{padding:14vh 8vw 14vh 6vw;display:flex;flex-direction:column;gap:10vh;justify-content:center;min-height:100vh}
 .sticky-text article{max-width:520px}
@@ -122,6 +124,11 @@ em,.italic{font-style:italic;color:var(--gold-soft)}
 .h-card h4{font-family:var(--serif);font-weight:400;font-size:1.875rem;line-height:1.05;margin-bottom:12px;letter-spacing:-.01em}
 .h-card p{color:rgba(245,240,224,.7);font-size:0.875rem;max-width:380px;margin:0;line-height:1.5}
 .card-img{width:100%;height:340px;flex-shrink:0;background-size:cover;background-position:center top;border-radius:4px;margin-top:20px}
+.card-img--praticas1{background-image:url('../img/praticas1.jpg')}
+.card-img--praticas2{background-image:url('../img/praticas2.jpg')}
+.card-img--praticas3{background-image:url('../img/praticas3.jpg')}
+.card-img--praticas4{background-image:url('../img/praticas4.jpg')}
+.card-img--praticas5{background-image:url('../img/praticas5.jpg')}
 .muted{color:rgba(245,240,224,.55);font-size:0.8125rem;letter-spacing:.2em;text-transform:uppercase;margin-top:32px}
 
 @media (max-width:780px){
@@ -135,6 +142,7 @@ em,.italic{font-style:italic;color:var(--gold-soft)}
 /* ============ IMPACT ============ */
 .impact{position:relative;padding:180px 8vw;overflow:hidden}
 .impact-bg{position:absolute;inset:-10%;background-size:cover;background-position:center;will-change:transform}
+.impact-bg--impact{background-image:url('../img/impacto.jpg')}
 .impact-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,30,22,.92),rgba(10,26,20,.96))}
 .impact-content{position:relative;max-width:1500px;margin:0 auto}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:48px;margin-top:100px;padding-top:60px;border-top:1px solid var(--line)}
