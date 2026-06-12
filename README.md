@@ -123,6 +123,25 @@ Agroforte-Futuro-Sustentavel/
 
 ---
 
+## 📚 Fontes do Conteúdo
+
+O conteúdo do projeto é baseado em fontes oficiais e científicas sobre agricultura sustentável:
+
+- **EMBRAPA** - Empresa Brasileira de Pesquisa Agropecuária
+  - Agricultura de Precisão
+  - ILPF (Integração Lavoura-Pecuária-Floresta)
+  - Tecnologia no Campo
+
+- **MAPA** - Ministério da Agricultura, Pecuária e Abastecimento
+  - Agrofloresta
+
+- **FAO** - Organização das Nações Unidas para Alimentação e Agricultura
+  - Agricultura Regenerativa
+
+Todas as informações apresentadas são baseadas em dados científicos e práticas agrícolas sustentáveis reconhecidas internacionalmente.
+
+---
+
 ## 🎨 Customização
 
 ### Cores

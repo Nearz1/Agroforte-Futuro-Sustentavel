@@ -3,22 +3,67 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Agroforte — Futuro Sustentável</title>
-<meta name="description" content="Agroforte: o equilíbrio entre produção agrícola e preservação ambiental. O futuro sustentável começa na terra." />
+<title>Agroforte — Futuro Sustentável | Concurso Agrinho 2026</title>
+<meta name="description" content="Agroforte: o equilíbrio entre produção agrícola e preservação ambiental. O futuro sustentável começa na terra. Projeto educativo sobre agricultura sustentável, agrofloresta e práticas regenerativas." />
+<meta name="keywords" content="agricultura sustentável, agrofloresta, agrinho 2026, meio ambiente, produção consciente, agricultura regenerativa, ILPF, agricultura de precisão, sustentabilidade rural" />
+<meta name="author" content="Scolver" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Agroforte — Futuro Sustentável" />
+<meta property="og:description" content="O equilíbrio entre produção agrícola e preservação ambiental. Projeto educativo para o Concurso Agrinho 2026." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Agroforte" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Agroforte — Futuro Sustentável" />
+<meta name="twitter:description" content="O equilíbrio entre produção agrícola e preservação ambiental." />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://agroforte.com.br" />
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Agroforte",
+  "description": "Projeto educativo sobre agricultura sustentável e agrofloresta para o Concurso Agrinho 2026",
+  "url": "https://agroforte.com.br",
+  "keywords": ["agricultura sustentável", "agrofloresta", "meio ambiente", "sustentabilidade"],
+  "educationalLevel": "Ensino Fundamental",
+  "educationalUse": "Concurso Agrinho 2026",
+  "learningResourceType": "Projeto Educacional",
+  "about": {
+    "@type": "Thing",
+    "name": "Agricultura Sustentável",
+    "description": "Práticas agrícolas que equilibram produção e preservação ambiental"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Scolver"
+  }
+}
+</script>
+
 <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
 <div class="cursor" id="cursor"></div>
 
 <div class="progress" id="progress"></div>
 
-<header class="nav">
+<header class="nav" role="banner">
   <a href="#top" class="logo">
     <span class="logo-mark">▲</span>
     <span>Agroforte</span>
   </a>
-  <nav>
+  <nav role="navigation" aria-label="Navegação principal">
     <a href="#sobre">Sobre</a>
     <a href="#praticas">Práticas</a>
     <a href="#impacto">Impacto</a>
@@ -26,15 +71,17 @@
   <div class="nav-meta">Agrinho · 2026</div>
 </header>
 
+<main id="main-content">
+
 <!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-bg hero-bg--hero"></div>
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-bg hero-bg--hero" loading="lazy"></div>
   <div class="hero-grain"></div>
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
     <div class="eyebrow"><span></span> Futuro Sustentável</div>
-    <h1 class="hero-title">
+    <h1 class="hero-title" id="hero-title">
       <span class="line"><span class="word">Cultivar</span></span>
       <span class="line"><span class="word italic">a terra,</span></span>
       <span class="line"><span class="word">honrar</span> <span class="word italic">a floresta.</span></span>
@@ -69,22 +116,22 @@
 </section>
 
 <!-- INTRO / MANIFESTO -->
-<section class="manifesto reveal-section" id="sobre">
+<section class="manifesto reveal-section" id="sobre" aria-labelledby="manifesto-title">
   <div class="section-label"><span>01</span> Manifesto</div>
-  <h2 class="big-text" data-split>
+  <h2 class="big-text" id="manifesto-title" data-split>
     Não existe futuro para o campo sem a floresta. E não existe floresta sem mãos que a cuidem.
   </h2>
 </section>
 
 <!-- SOBRE com sticky imagem -->
-<section class="sticky-block">
+<section class="sticky-block" aria-labelledby="sobre-title">
   <div class="sticky-media">
-    <div class="sticky-img sticky-img--sobre"></div>
+    <div class="sticky-img sticky-img--sobre" loading="lazy"></div>
   </div>
   <div class="sticky-text">
     <article class="reveal">
       <span class="kicker">A semente</span>
-      <h3>O solo é o nosso primeiro pacto.</h3>
+      <h3 id="sobre-title">O solo é o nosso primeiro pacto.</h3>
       <p>Cada hectare regenerado é um ecossistema inteiro voltando a respirar. Microrganismos, raízes, polinizadores — uma economia invisível que sustenta tudo o que comemos.</p>
     </article>
     <article class="reveal">
@@ -101,12 +148,12 @@
 </section>
 
 <!-- HORIZONTAL PINNED PRÁTICAS -->
-<section class="horizontal" id="praticas">
+<section class="horizontal" id="praticas" aria-labelledby="praticas-title">
   <div class="horizontal-inner">
     <div class="horizontal-track" id="hTrack">
       <div class="h-panel h-intro">
         <div class="section-label light"><span>02</span> Práticas</div>
-        <h2 class="big-text light">Cinco gestos<br>que mudam tudo.</h2>
+        <h2 class="big-text light" id="praticas-title">Cinco gestos<br>que mudam tudo.</h2>
         <p class="muted">Deslize →</p>
       </div>
       <article class="h-panel h-card">
@@ -148,28 +195,28 @@
 
 <!-- IMPACTO com números -->
 <section class="impact" id="impacto">
-  <div class="impact-bg impact-bg--impact"></div>
+  <div class="impact-bg impact-bg--impact" loading="lazy"></div>
   <div class="impact-veil"></div>
   <div class="impact-content">
     <div class="section-label light"><span>03</span> Impacto</div>
-    <h2 class="big-text light reveal">O futuro, em números que respiram.</h2>
+    <h2 class="big-text light reveal" id="impacto-title">O futuro, em números que respiram.</h2>
 
     <div class="stats">
       <div class="stat reveal">
-        <span class="num" data-count="12400">0</span><span class="num-suffix">ha</span>
-        <p>de áreas regeneradas sob manejo Agroforte</p>
+        <span class="num" data-count="12">0</span><span class="num-suffix">M ha</span>
+        <p>de área de agricultura sustentável no Brasil (EMBRAPA, 2024)</p>
       </div>
       <div class="stat reveal">
-        <span class="num" data-count="86">0</span><span class="num-suffix">%</span>
-        <p>menos agroquímicos por hectare desde 2018</p>
+        <span class="num" data-count="40">0</span><span class="num-suffix">%</span>
+        <p>redução de emissões com ILPF (EMBRAPA, 2023)</p>
       </div>
       <div class="stat reveal">
-        <span class="num" data-count="320">0</span><span class="num-suffix">k t</span>
-        <p>de CO₂ capturado em sistemas agroflorestais</p>
+        <span class="num" data-count="2">0</span><span class="num-suffix">Gt</span>
+        <p>de CO₂/ano capturado por agroflorestas globais (FAO, 2022)</p>
       </div>
       <div class="stat reveal">
-        <span class="num" data-count="240">0</span><span class="num-suffix">+</span>
-        <p>espécies nativas reintroduzidas nos corredores</p>
+        <span class="num" data-count="15">0</span><span class="num-suffix">%</span>
+        <p>do território brasileiro em áreas protegidas (IBGE, 2024)</p>
       </div>
     </div>
 
@@ -180,7 +227,9 @@
   </div>
 </section>
 
-<footer class="footer">
+</main>
+
+<footer class="footer" role="contentinfo">
   <div class="footer-grid">
     <div>
       <div class="logo big"><span class="logo-mark">▲</span> Agroforte</div>
